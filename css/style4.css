@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  html {
+    font-size: 62.5%;}
+
+  body {
+    font-size: 1.6rem;}
+
+  nav {
+    display: flex;
+    justify-content: center;
+    font-family: "Cinzel", serif;
+    background: linear-gradient(-1deg, black, gray);
+    background-repeat: no-repeat;
+  }
+  
+  nav img {
+    width: 50px;
+    opacity: 0.7;
+  }
+  
+  nav img:hover {
+    opacity: 1;
+  }
+  
+  .nav-links {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .nav-links ul li {
+    position: relative;
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 10px;
+  }
+  
+  .nav-links ul li a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  .nav-links ul li a:hover {
+    color: rgb(188, 50, 50);
+    transition: 1s;
+  }
+
+body{
+    background: url(/images/image-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.freak {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-text {
+    padding: 1rem ;
+    margin: 1rem;
+    width: 50%;
+    background-color: #313131;
+}
+a
+/* {width:50% ;} */
+
+.border{
+    width: 15rem;
+    height: 1.5rem;
+    background:#34495e8d ;
+    margin: 2rem auto}
+
+
+::placeholder{
+    color: #fff;
+    font-size:1.5rem;}
+
+.form-text:hover{
+  box-shadow: 0 0 1rem .4rem #34495e;}
+
+textarea.form-text{
+    resize: none;
+    height: 10.2rem;}
+
+button{
+    font-weight: bolder;
+    float: right;
+    padding: 1rem 5rem;
+    color: white;
+    background-color: rgb(136, 16, 16);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    background: green;
+}
+  footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(to right, gray, black);
+    height: 5rem;
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .icon-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  .icon a {
+    margin: 0 0.5rem 0 0.5rem;
+    font-size: 2.8rem;
+    color: rgb(17, 16, 16);
+  }
+
+
+
+  @media (max-width: 700px) {
+ 
+    .nav-links{
+      display: flex;
+      justify-content: center;
+      align-items: center;}
+
+     
+    .container h1{
+      color:white;
+    }
+    .nav-links ul li a {
+      font-size: 1rem;
+      color: black;
+      font-weight: 900;
+    }
+   
+  }
+
+  
+  

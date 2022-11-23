@@ -1,0 +1,229 @@
+*
+{padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Island Moments', cursive;
+font-family: 'Yrsa', serif;
+}
+
+html
+{font-size: 62.5%;
+}
+
+
+
+.header{
+    height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/images/image-08.jpg);
+    background-attachment: fixed;
+    background-position: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+nav
+{display: flex;
+/* padding: 2% 6%; */
+justify-content:center;}
+
+nav img
+{ width: 50px;
+  opacity: 0.7;
+
+}
+
+nav img:hover{
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    opacity: 1;
+}
+
+.nav-links{
+    flex:1 ;
+    text-align: right;
+}
+
+.nav-links ul li
+{ position: relative;
+list-style-type: none;
+display: inline-block;
+padding: 8px 10px;
+}
+
+.nav-links ul li a
+{color: white;
+    font-weight: bolder;
+text-decoration: none;
+font-size: 2rem;}
+
+.nav-links ul li a:hover{
+  color: rgb(188, 50, 50);
+  /* border-bottom: 2px solid green; */
+  /* border-left: 2px solid green; */
+  transition:1s ;
+}
+
+
+
+.text_box{
+    width: 90%;
+    color:rgb(81, 3, 3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;}
+
+.text_box h1
+{font-size: 4.2rem;
+    text-shadow: 1px 1px 2px rgb(45, 124, 24), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(205, 191, 191);
+    font-weight: 1000;
+margin-top: 5rem;}
+
+.text_box p{
+    margin: 10px 0 40px;
+    font-size: 2rem;
+    color: rgb(111, 36, 34);
+    text-shadow:  0 0 1em rgb(16, 12, 12), 0 0 0.2em rgb(7, 8, 7);
+font-weight: 1000;}
+
+
+html, body { 
+}
+
+
+
+.card:hover{
+  /* background: linear-gradient(to right black,gray); */
+border: 10px solid greenyellow;
+
+}
+ h2{
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 1px;
+  background-color: gray;
+ }
+ 
+ .card{
+  position: relative;
+ }
+ .card,h3{
+  opacity: 0;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  
+ }
+.card,h3:hover{
+  opacity: 1;
+ }
+
+
+.button {
+  width: 250px;
+  height:25px;
+  color: black;
+  background-color: #313133;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  border-radius: 50px;
+  box-shadow: 12px 12px 24px rgba(117, 32, 9, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+ 
+  }
+
+button::before {
+  content: '';
+  border-radius: 1000px;
+  min-width: calc(250px + 12px);
+  min-height: calc(30px + 12px);
+  border: 2px solid red;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: rgb(29, 241, 14);
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 25px; height: 25px;
+  border-radius: 100%;
+  border: 6px solid green;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+footer {
+  background: linear-gradient(to right,gray, black);
+  height: 5rem;
+  text-align: center;
+  padding-top: 1rem;}
+  .icon-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;}
+  
+.icon  a {
+    margin: 0 0.5rem 0 0.5rem;
+    font-size: 2.8rem;
+    color: rgb(17, 16, 16);
+    }
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 250px;
+    height: 250px;
+    opacity: 0;
+  }
+}
+
+
+
+@media(max-width:700px)
+{ .text_box h1
+    {font-size: 2.2rem;}
+    .text_box p{
+        margin: 10px 0 40px;
+        font-size: 1.5rem;
+        color: white;}
+        .nav-links{
+        
+          display: flex;
+          align-content: center;
+          justify-content: center;
+         
+        }
+        .nav-links ul li a{
+          font-size: 1rem;
+          color: black;
+          font-weight:900;
+        }
+
+}
+

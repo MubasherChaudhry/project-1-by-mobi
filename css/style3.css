@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+nav {
+  display: flex;
+  /* padding: 2% 6%; */
+  justify-content: center;
+  font-family: "Cinzel", serif;
+  background: linear-gradient(-1deg, black, gray);
+  background-repeat: no-repeat;
+}
+
+nav img {
+  width: 50px;
+  opacity: 0.7;
+}
+
+nav img:hover {
+  opacity: 1;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  position: relative;
+  list-style-type: none;
+  display: inline-block;
+  padding: 8px 10px;
+}
+
+.nav-links ul li a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.nav-links ul li a:hover {
+  color:rgb(188, 50, 50);
+  transition: 1s;
+}
+
+.header {
+  /* padding: 40px; */
+  color: rgb(17, 15, 15);
+  font: size 2rem;
+  margin: auto;
+  line-height: 50px;
+}
+
+.container {
+  width: 100%;
+  background-color: antiquewhite;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  /* margin: 0 auto; */
+}
+.sub-container {
+  background-color: antiquewhite;
+  height: auto;
+  width: 100%;
+
+  /* margin: auto; */
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: 2px solid black; */
+}
+.team-mem {
+  /* margin: 10px; */
+  /* padding: 25px; */
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 25rem;
+  height: 25rem;
+  cursor: pointer;
+  transition: 0.4s;
+  /* box-sizing: border-box; */
+}
+h1 {
+  color: brown;
+  font-weight: 800;
+  font-size: 3rem;
+  /* font-family: 'Cinzel', serif; */
+  font-family: "Rubik Distressed", cursive;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 2rem;
+}
+h2 {
+  padding: 1rem;
+  font-family: "Cinzel", serif;
+}
+p {
+  font-family: "Cardo", serif;
+  padding: 1rem;
+}
+
+.team-mem img {
+  width: 150px;
+  height: 120px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.team-mem img:hover{
+border: 2px solid green;
+transform: scale(1.2);
+}
+
+
+.name {
+  font-family: "Cinzel", serif;
+  /* padding: 12px; */
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.desgin {
+  font-style: italic;
+  color: black;
+}
+
+.about {
+  font-family: "Cardo", serif;
+  /* margin: 20px 0; */
+  font-weight: 300;
+  color: brown;
+}
+.social-links {
+  /* margin: 15px; */
+  padding-top: 1rem;
+}
+.social-links a {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  transition: 0.5s;
+  font-size: 1.5rem;
+}
+.social-links a:hover {
+  transform: scale(1.5);
+}
+
+.social-links a i {
+  color: rgb(24, 89, 186);
+}
+section {
+  background-color: antiquewhite;
+}
+
+footer {
+  background: linear-gradient(to right, gray, black);
+  height: 5rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+.icon-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.icon a {
+  margin: 0 0.5rem 0 0.5rem;
+  font-size: 2.8rem;
+  color: rgb(17, 16, 16);
+}
+
+.platform {
+  width: 90%;
+  margin: 0 auto;
+  /* margin: 0 auto; */
+  /* display: block; */
+  /* overflow: auto; */
+}
+
+.featurette-heading {
+  color: rgb(22, 11, 228);
+}
+
+.featurette-heading,
+.lead {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+@media (max-width: 700px) {
+  .nav-links {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .nav-links ul li a {
+    font-size: 1rem;
+    color: black;
+    font-weight: 900;
+  }
+}
